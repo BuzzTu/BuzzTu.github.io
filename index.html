@@ -56,13 +56,99 @@
             bottom: 0;
             width: 100%;
         }
+        .copyright {
+            position: fixed;
+            bottom: 50px;
+            width: 100%;
+        }
+
+记忆已更新
+要确保底部版权信息不遮挡 "Contact Us" 的信息，可以将版权信息放在一个固定高度的元素内，并使用适当的样式使其在页面底部显示。以下是修改后的示例代码：
+
+html
+复制代码
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Name - Agency Purchasing and Trade Export Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .copyright {
+            position: fixed;
+            bottom: 50px;
+            width: 100%;
+        }
+
         @media screen and (max-width: 600px) {
             nav ul li {
                 display: block;
                 margin-bottom: 10px;
             }
+
             section {
-                padding: 6px;
+                padding: 10px;
+            }
+
+            .contact-info {
+                font-size: 14px;
+                line-height: 1.5;
+            }
+
+            .copyright {
+                bottom: 10px;
             }
         }
     </style>
